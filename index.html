@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PortFolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a039c49f06.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!---------------------------------NaVar------------------------------------>
+        <div id="header"> 
+            <div class="container">
+                <nav>
+                    <img classname = "vlogo" src="./img/Hand.jpeg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header"> <i class="fa-solid fa-house"></i> Inicio  </a></li>
+                        <li><a href="#about"> <i class="fa-solid fa-eject"></i> Acerca de mi </a></li>
+                        <li><a href="#servies"> <i class="fa-solid fa-briefcase"></i> Trabajos  </a></li>
+                        <li><a href="#portfolio"> <i class="fa-solid fa-folder"></i> Portafolio  </a></li>
+                        <li><a href="#contact"> <i class="fa-solid fa-address-book"></i> Contactarme  </a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p> <i class="fa-solid fa-bolt fa-fade" style="color: #fbfb2b;"></i> Jr. Developer <i class="fa-solid fa-bolt fa-fade" style="color: #fbfb2b;"></i></p>
+                    <h1> Hola, soy <span>Bryan</span><br>Roa</h1>
+                </div>
+            </div>
+        </div>
+<!---------------------------------------------Aboute Me------------------------------------------------------>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="img/2x2Me.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Acerca de mi</h1>
+                        <p> Soy Ingeniero en Sistemas, egresado del Instituto Tecnológico de Santo Domingo (INTEC), 
+                            con una profunda pasión por la resolución de problemas lógicos, centrándome en la programación. 
+                            A lo largo de mi carrera, he adquirido experiencia en diversos lenguajes, motores de bases de datos 
+                            y bibliotecas, destacando entre ellas .NET y SQL Server. Además, he tenido la oportunidad de trabajar 
+                            en proyectos emocionantes utilizando la biblioteca REACT, lo que ha enriquecido aún más mi conjunto de 
+                            habilidades.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Habilidades</p>
+                            <p class="tab-links" onclick="opentab('experencie')">Experiencia</p>
+                            <p class="tab-links" onclick="opentab('education')">Educación </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <!-----------Data Skill------------>
+                                <li><span> .NET </span><br>El primer contacto que tuve con la programación fue en el lenguaje C#. Luego, comencé a implementar .NET después de un proyecto universitario.</li>
+                                <li><span>SQL Server</span><br>Me apasiona mucho trabajar con consultas en bases de datos. Además, he participado en la creación de bases de datos para proyectos universitarios. </li>
+                                <li><span>HTML, CSS, JavaScript</span><br>Me parece muy interesante cómo puedo dar rienda suelta a mi<br>imaginación al crear una página web.</li>
+                                <li><span>React.js</span><br>Tuve la oportunidad de implementar React en mi proyecto<br>de grado y  me parecio fascinante.</li>
+                                <li><span>Excel</span><br>Desde la secundaria me familiaricé con Excel y actualmente estoy <br>creando un proyecto utilizando macros en VBA.</li>
+                                <li><span> Git / Git-Hub </span><br> El uso de GitHub me ha permitido controlar y<br>compartir las diferentes versiones de mis proyectos.</li>
+                                <li><span>Report Builder </span><br>Tengo experiencia creando reportes para bases de datos<br>pequeñas que he desarrollado por mí mismo.</li>
+                                <li><span>Conocimiento en Redes </span><br>Durante el transcurso de mi carrera universitaria, realicé <br>diferentes cursos de redes validados por CISCO Networking Academy.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="experencie">
+                            <ul>
+                                <!----------Data Experience------------->
+                                <li><span> Soporte Técnico </span>
+                                    <br><span class="dates"> Ministerio de Vivienda y Habitad </span>
+                                    <br>Oct 2022 - Actualidad
+                                    <br> - Supervisar los sistemas operativos 
+                                    <br> - Suplir asistencia a las impresoras y plotters
+                                    <br> - Instalación y migración de equipos
+                                    <br> - Completar solicitudes de forma remota</li>
+
+                                <li><span> Soporte Infraestructura </span>
+                                    <br><span class="dates"> BlueBlox Solutions </span>
+                                    <br>Feb 2022 - May 2022                               
+                                    <br> - Supervisar los sistemas operativos 
+                                    <br> - Monitorear la Infraestructura instalada
+                                    <br> - Instalación y migración de equipos
+                                    <br> - Mantenimiento de equipos informaticos</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <!-----------Data Education------------>
+                                <li><a href="#"><span>Ingenieria de Sistemas
+                                    </span><br>Instituto Tecnologíco de Santo Domingo (INTEC)</a></li>
+                                <li><a href="https://drive.google.com/file/d/1BiBTcABHg8Uy-vgGcVqTtgEBEP6xEj9B/view?usp=sharing"><span>Desarrollo de Software en Javascript (HTML/CSS)
+                                    </span><br>Instituto Tecnologíco de Ias America (ITLAS)</a></li> 
+                                <li><a href="https://drive.google.com/file/d/1-_I-zAkkK2sLccXEEglMS3T3fCbUvCGf/view?usp=sharing"><span>CCNAv7: Switching, Routing and WirelessEssentials
+                                    </span><br>CISCO NETWORKING ACADEMY</a></li>
+                                <li><a href="https://drive.google.com/file/d/1HybpCke2ANXLT_Glm-epakuzy2rrUlos/view?usp=sharing"><span>CCNAv7: Redes empresariales, Seguridad y Automatización
+                                    </span><br>CISCO NETWORKING ACADEMY</a></li>
+                                <li><a href="https://drive.google.com/file/d/1PkvdaRsus1bWfcmFo4pQuZP7V0ebWwbB/view?usp=sharing"><span>CCNAv7: Introdución a Redes
+                                    </span><br>CISCO NETWORKING ACADEMY</a></li>
+                                <li><a href="#"><span>Excel Avanzado
+                                    </span><br>INFOTEP</a></li>
+                                <li><a href="https://www.credly.com/badges/a627e76a-afc9-4dc7-b7cf-5bb1c3667dc9"><span>Specialization in Data Mining and Business Intelligence
+                                    </span><br>SAS</a></li>
+                                <li><a href="https://drive.google.com/file/d/1g8hsIzCWH2onJfjujxxRSXqpk1PCKCDK/view?usp=sharing"><span>Inteligencia Artificial
+                                    </span><br>CEABAD</a></li>
+                                <li><a href="https://drive.google.com/file/d/17qg3UvdIA41G9azosWtkcFELCZKrO1CU/view?usp=sharing"><span>Seguridad en Línea y Ciudadanía en la Era Digital
+                                    </span><br>CEABAD</a></li>
+                                <li><a href="https://drive.google.com/file/d/15ttxTLhIaBt9qyAtE9gHdd_woeRlnhaA/view?usp=sharing"><span>Trabajo en Equipo
+                                    </span><br>Fundación Carlos Slim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------------Services Page------------------------------------------->
+        <div id="servies">
+            <div class="container">
+                <h1 class="sub-title">Mi Projectos</h1>
+                <div class="project-list">
+                    <div class="pro">
+                        <i class="fa-solid fa-display"></i>                        
+                        <h2>Gestión Escarlata Front-End</h2>
+                        <p>Aplicación Web que funciona como gestor de banco de sangre.</p>
+                        <!--<a href="#">Buscsar más</a>-->
+                    </div>
+                    <div class="pro">
+                        <i class="fa-brands fa-codepen"></i>                        
+                        <h2>Gestión Escarlata Back-End</h2>
+                        <p>Aplicación web que funciona como backend de un gestor de banco de sangre.</p>
+                        <!--<a href="#">Buscsar más</a>-->
+                    </div>
+                    <div class="pro">
+                        <i class="fa-solid fa-database"></i>                        
+                        <h2>Base de datos para CINE</h2>
+                        <p>Base de datos requerida para una empresa que se enfoque en el entretenimiento para todo público.</p>
+                        <!--<a href="#">Buscsar más</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------------Portfolio------------------>
+        <div id="portfolio">
+            <div class="continer">
+                <h1 class="sub-title">Mi Portafolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/1ra.png">
+                        <div class="layer">
+                            <h3>Banco de Sangre Gestión Escarlata</h3>
+                            <p>Aplicación para gestionar pintas de sangre</p>
+                            <a href="https://github.com/BryanRMolina/FinalProjectFron.git"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/2da.jpg">
+                        <div class="layer">
+                            <h3>Gestor de datos</h3>
+                            <p>BackEnd de la aplicación Gestión Escarlata</p>
+                            <a href="https://github.com/hectorsoriano20/Gestion-Escarlata-Web-FrontEnd.git"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="img/3ra.jpg">
+                        <div class="layer">
+                            <h3>Registro de solicitudes</h3>
+                            <p>Gestor de datos en Visual Basic Aplication</p>
+                            <a href="https://estintecedu-my.sharepoint.com/:x:/g/personal/1096659_est_intec_edu_do/EZ54WJyvJsNGoUkCzFs7XhYBAjhuq7bXppBQwa8YXQbrOw?e=xaqgIu"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <a href="#" class="btn"> See More </a> -->
+            </div>
+        </div>
+        <!-------------------Contact--------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contactarme</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>Brack_Myers@outlook.com</p>
+                        <p><i class="fa-solid fa-phone"></i>1+(829)-665-6575</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bryan-roa-molina-89060b200/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://instagram.com/_bryanrmolina_?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.reddit.com/user/BrakcMyers"><i class="fa-brands fa-reddit"></i></a>
+                            <a href="https://github.com/BryanRMolina"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="img/BryanCV.pdf" download class="btn btn2">Descargar CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Nombre" required>
+                            <input type="email" name="Email" placeholder="Correo"required>
+                            <textarea name="Message" row="6" placeholder="Mensaje"></textarea>
+                            <button type="submit" class="btn btn2">Enviar</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyraight">
+                <!--- Foother de la pagina -->
+            </div>
+        </div>
+
+
+        <!--------------------------Configuration About Page-------------------------------->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links")
+            var tabcontents = document.getElementsByClassName("tab-contents")
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-links")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-links");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <!--------------------------Configuration Slide-Menu-------------------------->
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemeu.style.right = "0";
+            }
+            function closemenu() {
+                sidemeu.style.right = "-500px";
+            }
+        </script>
+
+        <!---------------------------conexion Google Sheets --------------------------->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxx8_HSZN29mSIZeEIxSrmHDiglbuewLjRZ1zWaFT8rCvbkWnSZb5mtOBXTd5SOkw8Nsw/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent"
+                    setTimeout(function(){
+                        msd.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
